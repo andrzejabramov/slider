@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="slider-wrapper">
+      <div class="container">
+        <!-- 0=Left, 1=Middle, 2=Right -->
+        <nav class="nav-links">
+          <a href="#" class="nav-link" data-index="0">Rostov-on-Don, Admiral</a>
+          <a href="#" class="nav-link" data-index="1">Sochi Thieves</a>
+          <a href="#" class="nav-link" data-index="2"
+            >Rostov-on-Don Patriotic</a
+          >
+        </nav>
+
+        <div class="active-underline pos-0" id="underline-0"></div>
+        <div class="active-underline pos-1" id="underline-1"></div>
+        <div class="active-underline pos-2" id="underline-2"></div>
+
+        <div class="content">
+          <div class="text-block">
+            <div class="header-row">
+              <h2 class="section-title">Completed<br />projects</h2>
+              <div class="title-line"></div>
+            </div>
+            <p class="description">
+              Only a small part of the work performed by our company is
+              presented on the site. For 14 years on in the construction<br />
+              market we have made happy more than 1000 families
+            </p>
+            <div class="info-grid">
+              <div class="info-item">
+                <h3 class="info-title">City:</h3>
+                <p class="info-value" id="city"></p>
+              </div>
+              <div class="info-item">
+                <h3 class="info-title">apartment area:</h3>
+                <p class="info-value" id="area"></p>
+              </div>
+              <div class="info-item">
+                <h3 class="info-title">Repair time:</h3>
+                <p class="info-value" id="time"></p>
+              </div>
+              <div class="info-item">
+                <h3 class="info-title">Repair Cost:</h3>
+                <p class="info-value" id="request"></p>
+              </div>
+            </div>
+          </div>
+          <div class="image-block">
+            <div class="slider-image" id="slider-image"></div>
+          </div>
+        </div>
+
+        <!-- Bottom Controls -->
+        <div class="controls">
+          <button class="arrow-btn prev-btn" aria-label="Previous slide">
+            <img src="img/direct.svg" alt="Previous" />
+          </button>
+          <div class="dots-container">
+            <span class="dot" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <button class="arrow-btn next-btn" aria-label="Next slide">
+            <img src="img/direct.svg" alt="Next" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
